@@ -3,6 +3,11 @@ package com.github.tommy.abstracts;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 字典数抽象类
+ *
+ * @author tommy
+ */
 public abstract class AbstractTrie {
 
     /**

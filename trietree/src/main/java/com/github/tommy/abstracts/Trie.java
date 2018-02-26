@@ -1,5 +1,10 @@
 package com.github.tommy.abstracts;
 
+/**
+ * 抽象实现实现
+ *
+ * @author tommy
+ */
 public class Trie extends AbstractTrie {
 
     private int size;
