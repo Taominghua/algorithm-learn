@@ -26,8 +26,7 @@ public class Trie extends AbstractTrie {
         }
 
         if (root == null) {
-            throw new RuntimeException(
-                    "root is not initialized. you should call Trie(boolean) to initialize a Trie");
+            throw new RuntimeException("root is not initialized. you should call Trie(boolean) to initialize a Trie");
         }
 
         return root.lookup(caseSensitive ? keywords : keywords.toLowerCase(), 0) != null;
