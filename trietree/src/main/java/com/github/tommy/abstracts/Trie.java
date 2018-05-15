@@ -39,8 +39,7 @@ public class Trie extends AbstractTrie {
             return 0;
         }
         if (root == null) {
-            throw new RuntimeException(
-                    "root is not initialized. you should call Trie(boolean) to initialize a Trie");
+            throw new RuntimeException("root is not initialized. you should call Trie(boolean) to initialize a Trie");
         }
         TrieNode n = root.lookup(caseSensitive ? keywords : keywords.toLowerCase(), 0);
         return n == null ? 0 : n.occurances;
@@ -52,8 +51,7 @@ public class Trie extends AbstractTrie {
             return 0;
         }
         if (root == null) {
-            throw new RuntimeException(
-                    "root is not initialized. you should call Trie(boolean) to initialize a Trie");
+            throw new RuntimeException("root is not initialized. you should call Trie(boolean) to initialize a Trie");
         }
 
         int times = root.insert(caseSensitive ? keywords : keywords.toLowerCase(), 0);
@@ -71,8 +69,7 @@ public class Trie extends AbstractTrie {
         }
 
         if (root == null) {
-            throw new RuntimeException(
-                    "root is not initialized. you should call Trie(boolean) to initialize a Trie");
+            throw new RuntimeException("root is not initialized. you should call Trie(boolean) to initialize a Trie");
         }
 
         if (root.remove(caseSensitive ? keywords : keywords.toLowerCase(), 0)) {
@@ -85,8 +82,7 @@ public class Trie extends AbstractTrie {
     @Override
     public int size() {
         if (root == null) {
-            throw new RuntimeException(
-                    "root is not initialized. you should call Trie(boolean) to initialize a Trie");
+            throw new RuntimeException("root is not initialized. you should call Trie(boolean) to initialize a Trie");
         }
         return size;
     }
