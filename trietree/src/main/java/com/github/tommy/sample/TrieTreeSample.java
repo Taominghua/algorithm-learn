@@ -11,6 +11,7 @@ import java.util.Scanner;
  * @author tommy
  */
 public class TrieTreeSample {
+
     private Trie mTrie;
 
     public static void main(String[] args) {
