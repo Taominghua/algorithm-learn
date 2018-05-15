@@ -60,9 +60,7 @@ public class TrieTreeSample {
                 }
             }
         }
-        System.out.println("Read from file and inserted " + numWords
-                + " words into trie in " + (System.currentTimeMillis() - t)
-                / 1000.0 + " seconds.");
+        System.out.println("Read from file and inserted " + numWords + " words into trie in " + (System.currentTimeMillis() - t) / 1000.0 + " seconds.");
     }
 
     public int getSize() {
